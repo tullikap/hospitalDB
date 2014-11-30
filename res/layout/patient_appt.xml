@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.44" >
+
+        <Button
+            android:id="@+id/btn_backAppt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22dp"
+            android:text="Back to Main Page" />
+
+        <Button
+            android:id="@+id/btn_confirmAppt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_backAppt"
+            android:layout_alignLeft="@+id/btn_backAppt"
+            android:layout_alignRight="@+id/btn_backAppt"
+            android:layout_marginBottom="15dp"
+            android:text="Confirm" />
+
+        <EditText
+            android:id="@+id/txtbox_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignRight="@+id/btn_confirmAppt"
+            android:layout_toRightOf="@+id/textView1"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_confirmAppt"
+            android:layout_marginBottom="39dp"
+            android:layout_toLeftOf="@+id/btn_confirmAppt"
+            android:text="Reason:" />
+
+        <DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/datePicker1" />
+
+    </RelativeLayout>
+
+</LinearLayout>

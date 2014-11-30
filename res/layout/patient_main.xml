@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="22dp"
+            android:layout_toLeftOf="@+id/btn_schedule"
+            android:text="Hello" />
+
+        <TextView
+            android:id="@+id/txt_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_appt"
+            android:layout_below="@+id/txt_appt"
+            android:layout_marginTop="27dp"
+            android:text="Balance:" />
+
+        <TextView
+            android:id="@+id/txt_appt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_ins"
+            android:layout_below="@+id/txt_ins"
+            android:layout_marginTop="26dp"
+            android:text="Next Appointment:" />
+
+        <TextView
+            android:id="@+id/txt_ins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_name"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginTop="25dp"
+            android:text="Insurance:" />
+
+        <TextView
+            android:id="@+id/txt_input_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_ins"
+            android:layout_alignRight="@+id/btn_schedule"
+            android:layout_toRightOf="@+id/txt_ins"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txt_input_ins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_ins"
+            android:layout_alignLeft="@+id/txt_input_name"
+            android:layout_alignRight="@+id/txt_input_name"
+            android:layout_marginLeft="18dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txt_input_appt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_appt"
+            android:layout_alignRight="@+id/txt_input_ins"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/txt_appt"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txt_input_bal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_balance"
+            android:layout_alignLeft="@+id/txt_input_name"
+            android:layout_alignRight="@+id/txt_input_appt"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/btn_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_balance"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:text="Schedule Appointment" />
+
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_schedule"
+            android:layout_alignRight="@+id/btn_schedule"
+            android:layout_below="@+id/btn_schedule"
+            android:layout_marginTop="20dp"
+            android:text="Previous Visit" />
+
+        <Button
+            android:id="@+id/btn_paybill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_history"
+            android:layout_alignRight="@+id/btn_history"
+            android:layout_below="@+id/btn_history"
+            android:layout_marginTop="14dp"
+            android:text="Pay Bill" />
+        
+        
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_paybill"
+            android:layout_alignRight="@+id/btn_paybill"
+            android:layout_below="@+id/btn_paybill"
+            android:layout_marginTop="14dp"
+            android:text="Sign Out" />
+
+    </RelativeLayout>
+
+</LinearLayout>
